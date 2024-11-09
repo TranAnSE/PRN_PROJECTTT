@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="QuanLiCuaHang.IncidentReportListPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Danh sách báo cáo sự cố" FontSize="24" Margin="0,0,0,20"/>
+
+        <DataGrid x:Name="ReportsDataGrid" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="ReportsDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tiêu đề" Binding="{Binding Title}" Width="*"/>
+                <DataGridTextColumn Header="Ngày báo cáo" Binding="{Binding SubmittedAt, StringFormat={}{0:dd/MM/yyyy HH:mm}}" Width="Auto"/>
+                <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="Auto"/>
+                <DataGridTextColumn Header="Nhân viên" Binding="{Binding Staff.Name}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

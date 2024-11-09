@@ -18,6 +18,8 @@
                 <Button Content="Nhập hàng" Click="ImportProductButton_Click" Style="{StaticResource MenuButtonStyle}"/>
                 <Button Content="Quản lý khách hàng" Click="CustomerManagementButton_Click" Style="{StaticResource MenuButtonStyle}"/>
                 <Button Content="Báo cáo" Click="ReportButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Báo cáo sự cố" Click="IncidentReportButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Danh sách báo cáo sự cố" Click="IncidentReportListButton_Click" Style="{StaticResource MenuButtonStyle}"/>
                 <Button Content="Quản lý voucher" Click="VoucherManagementButton_Click" Style="{StaticResource MenuButtonStyle}"/>
                 <Button Content="Trả lương nhân viên" Click="SalaryPaymentButton_Click" Style="{StaticResource MenuButtonStyle}"/>
                 <Button x:Name="AdminButton" Content="Quản lý nhân viên" Click="AdminButton_Click" Style="{StaticResource MenuButtonStyle}"/>

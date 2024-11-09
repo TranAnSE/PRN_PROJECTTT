@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using Microsoft.EntityFrameworkCore;
 using QuanLiCuaHang.Models;
 
 namespace QuanLiCuaHang
@@ -6,18 +7,19 @@ namespace QuanLiCuaHang
     public partial class MainWindow : Window
     {
         private User _currentUser;
+        private readonly QlcuahangContext _context;
 
         public MainWindow(User user)
         {
             InitializeComponent();
             _currentUser = user;
+            _context = new QlcuahangContext();
 
             if (_currentUser.UserRole == "Admin")
             {
                 AdminButton.Visibility = Visibility.Visible;
             }
 
-            // Hiển thị trang chủ khi khởi động
             ShowHomePage();
         }
 
@@ -114,6 +116,20 @@ namespace QuanLiCuaHang
             var loginWindow = new LoginWindow();
             loginWindow.Show();
             this.Close();
+        }
+        private void IncidentReportButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new IncidentReportPage(_context, _currentUser);
+        }
+        private void IncidentReportListButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainContent.Content = new IncidentReportListPage(_context);
+        }
+        //giải phóng _context khi cửa sổ đóng
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            _context.Dispose();
         }
     }
 }
