@@ -1,0 +1,445 @@
+Folder PATH listing for volume FastStorage
+Volume serial number is 22C6-AD90
+D:.
+|   .gitignore
+|   output.txt
+|   README.md
+|   
+\---QuanLiCuaHang
+    |   AddBatchWindow.xaml
+    |   AddBatchWindow.xaml.cs
+    |   AddEditCustomerWindow.xaml
+    |   AddEditCustomerWindow.xaml.cs
+    |   AddEditEmployeeWindow.xaml
+    |   AddEditEmployeeWindow.xaml.cs
+    |   AddEditProductWindow.xaml
+    |   AddEditProductWindow.xaml.cs
+    |   AddEditSupplierWindow.xaml
+    |   AddEditSupplierWindow.xaml.cs
+    |   AddProductToImportWindow.xaml
+    |   AddProductToImportWindow.xaml.cs
+    |   App.xaml
+    |   App.xaml.cs
+    |   appsettings.json
+    |   AssemblyInfo.cs
+    |   BatchDetailsWindow.xaml
+    |   BatchDetailsWindow.xaml.cs
+    |   CheckoutPage.xaml
+    |   CheckoutPage.xaml.cs
+    |   CreateVoucherBlockWindow.xaml
+    |   CreateVoucherBlockWindow.xaml.cs
+    |   CustomerManagementPage.xaml
+    |   CustomerManagementPage.xaml.cs
+    |   DatabaseManager.cs
+    |   EmployeeManagementPage.xaml
+    |   EmployeeManagementPage.xaml.cs
+    |   HomePage.xaml
+    |   HomePage.xaml.cs
+    |   ImportManagementPage.xaml
+    |   ImportManagementPage.xaml.cs
+    |   ImportProductPage.xaml
+    |   ImportProductPage.xaml.cs
+    |   InventoryPage.xaml
+    |   InventoryPage.xaml.cs
+    |   LoginWindow.xaml
+    |   LoginWindow.xaml.cs
+    |   MainWindow.xaml
+    |   MainWindow.xaml.cs
+    |   ProductManagementControl.xaml
+    |   ProductManagementControl.xaml.cs
+    |   ProductManagementPage.xaml
+    |   ProductManagementPage.xaml.cs
+    |   QuanLiCuaHang.csproj
+    |   QuanLiCuaHang.csproj.user
+    |   QuanLiCuaHang.sln
+    |   ReportPage.xaml
+    |   ReportPage.xaml.cs
+    |   SalaryPaymentPage.xaml
+    |   SalaryPaymentPage.xaml.cs
+    |   SalesReportPage.xaml
+    |   SalesReportPage.xaml.cs
+    |   SettingsPage.xaml
+    |   SettingsPage.xaml.cs
+    |   SupplierManagementPage.xaml
+    |   SupplierManagementPage.xaml.cs
+    |   SupplierManagementWindow.xaml
+    |   SupplierManagementWindow.xaml.cs
+    |   UpdateInventoryWindow.xaml
+    |   UpdateInventoryWindow.xaml.cs
+    |   VoucherBlockDetailsWindow.xaml
+    |   VoucherBlockDetailsWindow.xaml.cs
+    |   VoucherManagementPage.xaml
+    |   VoucherManagementPage.xaml.cs
+    |   
+    +---bin
+    |   \---Debug
+    |       \---net8.0-windows
+    |           |   appsettings.json
+    |           |   Azure.Core.dll
+    |           |   Azure.Identity.dll
+    |           |   Humanizer.dll
+    |           |   Microsoft.Bcl.AsyncInterfaces.dll
+    |           |   Microsoft.CodeAnalysis.CSharp.dll
+    |           |   Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+    |           |   Microsoft.CodeAnalysis.dll
+    |           |   Microsoft.CodeAnalysis.Workspaces.dll
+    |           |   Microsoft.Data.SqlClient.dll
+    |           |   Microsoft.EntityFrameworkCore.Abstractions.dll
+    |           |   Microsoft.EntityFrameworkCore.Design.dll
+    |           |   Microsoft.EntityFrameworkCore.dll
+    |           |   Microsoft.EntityFrameworkCore.Relational.dll
+    |           |   Microsoft.EntityFrameworkCore.SqlServer.dll
+    |           |   Microsoft.Extensions.Caching.Abstractions.dll
+    |           |   Microsoft.Extensions.Caching.Memory.dll
+    |           |   Microsoft.Extensions.Configuration.Abstractions.dll
+    |           |   Microsoft.Extensions.Configuration.dll
+    |           |   Microsoft.Extensions.Configuration.FileExtensions.dll
+    |           |   Microsoft.Extensions.Configuration.Json.dll
+    |           |   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+    |           |   Microsoft.Extensions.DependencyInjection.dll
+    |           |   Microsoft.Extensions.DependencyModel.dll
+    |           |   Microsoft.Extensions.FileProviders.Abstractions.dll
+    |           |   Microsoft.Extensions.FileProviders.Physical.dll
+    |           |   Microsoft.Extensions.FileSystemGlobbing.dll
+    |           |   Microsoft.Extensions.Logging.Abstractions.dll
+    |           |   Microsoft.Extensions.Logging.dll
+    |           |   Microsoft.Extensions.Options.dll
+    |           |   Microsoft.Extensions.Primitives.dll
+    |           |   Microsoft.Identity.Client.dll
+    |           |   Microsoft.Identity.Client.Extensions.Msal.dll
+    |           |   Microsoft.Identity.Client.NativeInterop.dll
+    |           |   Microsoft.IdentityModel.Abstractions.dll
+    |           |   Microsoft.IdentityModel.JsonWebTokens.dll
+    |           |   Microsoft.IdentityModel.Logging.dll
+    |           |   Microsoft.IdentityModel.Protocols.dll
+    |           |   Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+    |           |   Microsoft.IdentityModel.Tokens.dll
+    |           |   Microsoft.SqlServer.Server.dll
+    |           |   Microsoft.Web.WebView2.Core.dll
+    |           |   Microsoft.Web.WebView2.WinForms.dll
+    |           |   Microsoft.Web.WebView2.Wpf.dll
+    |           |   Mono.TextTemplating.dll
+    |           |   QuanLiCuaHang.deps.json
+    |           |   QuanLiCuaHang.dll
+    |           |   QuanLiCuaHang.exe
+    |           |   QuanLiCuaHang.pdb
+    |           |   QuanLiCuaHang.runtimeconfig.json
+    |           |   System.Composition.AttributedModel.dll
+    |           |   System.Composition.Convention.dll
+    |           |   System.Composition.Hosting.dll
+    |           |   System.Composition.Runtime.dll
+    |           |   System.Composition.TypedParts.dll
+    |           |   System.IdentityModel.Tokens.Jwt.dll
+    |           |   System.IO.Pipelines.dll
+    |           |   System.Memory.Data.dll
+    |           |   System.Runtime.Caching.dll
+    |           |   
+    |           +---cs
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---de
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---es
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---fr
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---it
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---ja
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---ko
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---pl
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---pt-BR
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---ru
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---runtimes
+    |           |   +---unix
+    |           |   |   \---lib
+    |           |   |       \---net6.0
+    |           |   |               Microsoft.Data.SqlClient.dll
+    |           |   |               
+    |           |   +---win
+    |           |   |   \---lib
+    |           |   |       \---net6.0
+    |           |   |               Microsoft.Data.SqlClient.dll
+    |           |   |               System.Runtime.Caching.dll
+    |           |   |               
+    |           |   +---win-arm
+    |           |   |   \---native
+    |           |   |           Microsoft.Data.SqlClient.SNI.dll
+    |           |   |           
+    |           |   +---win-arm64
+    |           |   |   \---native
+    |           |   |           Microsoft.Data.SqlClient.SNI.dll
+    |           |   |           msalruntime_arm64.dll
+    |           |   |           WebView2Loader.dll
+    |           |   |           
+    |           |   +---win-x64
+    |           |   |   \---native
+    |           |   |           Microsoft.Data.SqlClient.SNI.dll
+    |           |   |           msalruntime.dll
+    |           |   |           WebView2Loader.dll
+    |           |   |           
+    |           |   \---win-x86
+    |           |       \---native
+    |           |               Microsoft.Data.SqlClient.SNI.dll
+    |           |               msalruntime_x86.dll
+    |           |               WebView2Loader.dll
+    |           |               
+    |           +---tr
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           +---zh-Hans
+    |           |       Microsoft.CodeAnalysis.CSharp.resources.dll
+    |           |       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |           |       Microsoft.CodeAnalysis.resources.dll
+    |           |       Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |           |       
+    |           \---zh-Hant
+    |                   Microsoft.CodeAnalysis.CSharp.resources.dll
+    |                   Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+    |                   Microsoft.CodeAnalysis.resources.dll
+    |                   Microsoft.CodeAnalysis.Workspaces.resources.dll
+    |                   
+    +---Models
+    |       Bill.cs
+    |       BillDetail.cs
+    |       BlockVoucher.cs
+    |       Consignment.cs
+    |       Customer.cs
+    |       InputInfo.cs
+    |       Product.cs
+    |       QlcuahangContext.cs
+    |       Report.cs
+    |       SalaryBill.cs
+    |       Supplier.cs
+    |       User.cs
+    |       Voucher.cs
+    |       
+    \---obj
+        |   project.assets.json
+        |   project.nuget.cache
+        |   QuanLiCuaHang.csproj.EntityFrameworkCore.targets
+        |   QuanLiCuaHang.csproj.nuget.dgspec.json
+        |   QuanLiCuaHang.csproj.nuget.g.props
+        |   QuanLiCuaHang.csproj.nuget.g.targets
+        |   QuanLiCuaHang_3nij5kcu_wpftmp.csproj.nuget.dgspec.json
+        |   QuanLiCuaHang_3nij5kcu_wpftmp.csproj.nuget.g.props
+        |   QuanLiCuaHang_3nij5kcu_wpftmp.csproj.nuget.g.targets
+        |   QuanLiCuaHang_ayip5a5h_wpftmp.csproj.nuget.dgspec.json
+        |   QuanLiCuaHang_ayip5a5h_wpftmp.csproj.nuget.g.props
+        |   QuanLiCuaHang_ayip5a5h_wpftmp.csproj.nuget.g.targets
+        |   QuanLiCuaHang_intovwvn_wpftmp.csproj.nuget.dgspec.json
+        |   QuanLiCuaHang_intovwvn_wpftmp.csproj.nuget.g.props
+        |   QuanLiCuaHang_intovwvn_wpftmp.csproj.nuget.g.targets
+        |   QuanLiCuaHang_m4wsghih_wpftmp.csproj.nuget.dgspec.json
+        |   QuanLiCuaHang_m4wsghih_wpftmp.csproj.nuget.g.props
+        |   QuanLiCuaHang_m4wsghih_wpftmp.csproj.nuget.g.targets
+        |   QuanLiCuaHang_p3ggv1cw_wpftmp.csproj.nuget.dgspec.json
+        |   QuanLiCuaHang_p3ggv1cw_wpftmp.csproj.nuget.g.props
+        |   QuanLiCuaHang_p3ggv1cw_wpftmp.csproj.nuget.g.targets
+        |   
+        \---Debug
+            \---net8.0-windows
+                |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+                |   AddBatchWindow.baml
+                |   AddBatchWindow.g.cs
+                |   AddBatchWindow.g.i.cs
+                |   AddEditCustomerWindow.baml
+                |   AddEditCustomerWindow.g.cs
+                |   AddEditCustomerWindow.g.i.cs
+                |   AddEditEmployeeWindow.baml
+                |   AddEditEmployeeWindow.g.cs
+                |   AddEditEmployeeWindow.g.i.cs
+                |   AddEditProductWindow.baml
+                |   AddEditProductWindow.g.cs
+                |   AddEditProductWindow.g.i.cs
+                |   AddEditSupplierWindow.baml
+                |   AddEditSupplierWindow.g.cs
+                |   AddEditSupplierWindow.g.i.cs
+                |   AddProductToImportWindow.baml
+                |   AddProductToImportWindow.g.cs
+                |   AddProductToImportWindow.g.i.cs
+                |   App.baml
+                |   App.g.cs
+                |   App.g.i.cs
+                |   apphost.exe
+                |   BatchDetailsWindow.baml
+                |   BatchDetailsWindow.g.cs
+                |   BatchDetailsWindow.g.i.cs
+                |   CheckoutPage.baml
+                |   CheckoutPage.g.cs
+                |   CheckoutPage.g.i.cs
+                |   CreateVoucherBlockWindow.baml
+                |   CreateVoucherBlockWindow.g.cs
+                |   CreateVoucherBlockWindow.g.i.cs
+                |   CustomerManagementPage.baml
+                |   CustomerManagementPage.g.cs
+                |   CustomerManagementPage.g.i.cs
+                |   EmployeeManagementPage.baml
+                |   EmployeeManagementPage.g.cs
+                |   EmployeeManagementPage.g.i.cs
+                |   HomePage.baml
+                |   HomePage.g.cs
+                |   HomePage.g.i.cs
+                |   ImportManagementPage.baml
+                |   ImportManagementPage.g.cs
+                |   ImportManagementPage.g.i.cs
+                |   ImportProductPage.baml
+                |   ImportProductPage.g.cs
+                |   ImportProductPage.g.i.cs
+                |   InventoryPage.baml
+                |   InventoryPage.g.cs
+                |   InventoryPage.g.i.cs
+                |   LoginWindow.baml
+                |   LoginWindow.g.cs
+                |   LoginWindow.g.i.cs
+                |   MainWindow.baml
+                |   MainWindow.g.cs
+                |   MainWindow.g.i.cs
+                |   ProductManagementControl.baml
+                |   ProductManagementControl.g.cs
+                |   ProductManagementControl.g.i.cs
+                |   ProductManagementPage.baml
+                |   ProductManagementPage.g.cs
+                |   ProductManagementPage.g.i.cs
+                |   QuanLiCu.D81F4808.Up2Date
+                |   QuanLiCuaHang.AssemblyInfo.cs
+                |   QuanLiCuaHang.AssemblyInfoInputs.cache
+                |   QuanLiCuaHang.assets.cache
+                |   QuanLiCuaHang.csproj.AssemblyReference.cache
+                |   QuanLiCuaHang.csproj.BuildWithSkipAnalyzers
+                |   QuanLiCuaHang.csproj.CoreCompileInputs.cache
+                |   QuanLiCuaHang.csproj.FileListAbsolute.txt
+                |   QuanLiCuaHang.designer.deps.json
+                |   QuanLiCuaHang.designer.runtimeconfig.json
+                |   QuanLiCuaHang.dll
+                |   QuanLiCuaHang.g.resources
+                |   QuanLiCuaHang.GeneratedMSBuildEditorConfig.editorconfig
+                |   QuanLiCuaHang.genruntimeconfig.cache
+                |   QuanLiCuaHang.GlobalUsings.g.cs
+                |   QuanLiCuaHang.pdb
+                |   QuanLiCuaHang_3nij5kcu_wpftmp.AssemblyInfo.cs
+                |   QuanLiCuaHang_3nij5kcu_wpftmp.AssemblyInfoInputs.cache
+                |   QuanLiCuaHang_3nij5kcu_wpftmp.assets.cache
+                |   QuanLiCuaHang_3nij5kcu_wpftmp.GeneratedMSBuildEditorConfig.editorconfig
+                |   QuanLiCuaHang_3nij5kcu_wpftmp.GlobalUsings.g.cs
+                |   QuanLiCuaHang_axgpbx2r_wpftmp.AssemblyInfo.cs
+                |   QuanLiCuaHang_axgpbx2r_wpftmp.AssemblyInfoInputs.cache
+                |   QuanLiCuaHang_axgpbx2r_wpftmp.assets.cache
+                |   QuanLiCuaHang_axgpbx2r_wpftmp.csproj.BuildWithSkipAnalyzers
+                |   QuanLiCuaHang_axgpbx2r_wpftmp.GeneratedMSBuildEditorConfig.editorconfig
+                |   QuanLiCuaHang_axgpbx2r_wpftmp.GlobalUsings.g.cs
+                |   QuanLiCuaHang_ayip5a5h_wpftmp.AssemblyInfo.cs
+                |   QuanLiCuaHang_ayip5a5h_wpftmp.AssemblyInfoInputs.cache
+                |   QuanLiCuaHang_ayip5a5h_wpftmp.assets.cache
+                |   QuanLiCuaHang_ayip5a5h_wpftmp.GeneratedMSBuildEditorConfig.editorconfig
+                |   QuanLiCuaHang_ayip5a5h_wpftmp.GlobalUsings.g.cs
+                |   QuanLiCuaHang_f1kxogyz_wpftmp.AssemblyInfo.cs
+                |   QuanLiCuaHang_f1kxogyz_wpftmp.AssemblyInfoInputs.cache
+                |   QuanLiCuaHang_f1kxogyz_wpftmp.assets.cache
+                |   QuanLiCuaHang_f1kxogyz_wpftmp.GeneratedMSBuildEditorConfig.editorconfig
+                |   QuanLiCuaHang_f1kxogyz_wpftmp.GlobalUsings.g.cs
+                |   QuanLiCuaHang_intovwvn_wpftmp.AssemblyInfo.cs
+                |   QuanLiCuaHang_intovwvn_wpftmp.AssemblyInfoInputs.cache
+                |   QuanLiCuaHang_intovwvn_wpftmp.assets.cache
+                |   QuanLiCuaHang_intovwvn_wpftmp.GeneratedMSBuildEditorConfig.editorconfig
+                |   QuanLiCuaHang_intovwvn_wpftmp.GlobalUsings.g.cs
+                |   QuanLiCuaHang_m4wsghih_wpftmp.AssemblyInfo.cs
+                |   QuanLiCuaHang_m4wsghih_wpftmp.AssemblyInfoInputs.cache
+                |   QuanLiCuaHang_m4wsghih_wpftmp.assets.cache
+                |   QuanLiCuaHang_m4wsghih_wpftmp.GeneratedMSBuildEditorConfig.editorconfig
+                |   QuanLiCuaHang_m4wsghih_wpftmp.GlobalUsings.g.cs
+                |   QuanLiCuaHang_MarkupCompile.cache
+                |   QuanLiCuaHang_MarkupCompile.i.cache
+                |   QuanLiCuaHang_MarkupCompile.i.lref
+                |   QuanLiCuaHang_p3ggv1cw_wpftmp.AssemblyInfo.cs
+                |   QuanLiCuaHang_p3ggv1cw_wpftmp.AssemblyInfoInputs.cache
+                |   QuanLiCuaHang_p3ggv1cw_wpftmp.assets.cache
+                |   QuanLiCuaHang_p3ggv1cw_wpftmp.GeneratedMSBuildEditorConfig.editorconfig
+                |   QuanLiCuaHang_p3ggv1cw_wpftmp.GlobalUsings.g.cs
+                |   QuanLiCuaHang_uxd0elgs_wpftmp.AssemblyInfo.cs
+                |   QuanLiCuaHang_uxd0elgs_wpftmp.AssemblyInfoInputs.cache
+                |   QuanLiCuaHang_uxd0elgs_wpftmp.assets.cache
+                |   QuanLiCuaHang_uxd0elgs_wpftmp.csproj.BuildWithSkipAnalyzers
+                |   QuanLiCuaHang_uxd0elgs_wpftmp.GeneratedMSBuildEditorConfig.editorconfig
+                |   QuanLiCuaHang_uxd0elgs_wpftmp.GlobalUsings.g.cs
+                |   ReportPage.baml
+                |   ReportPage.g.cs
+                |   ReportPage.g.i.cs
+                |   SalaryPaymentPage.baml
+                |   SalaryPaymentPage.g.cs
+                |   SalaryPaymentPage.g.i.cs
+                |   SalesReportPage.baml
+                |   SalesReportPage.g.cs
+                |   SalesReportPage.g.i.cs
+                |   SettingsPage.baml
+                |   SettingsPage.g.cs
+                |   SettingsPage.g.i.cs
+                |   SupplierManagementPage.baml
+                |   SupplierManagementPage.g.cs
+                |   SupplierManagementPage.g.i.cs
+                |   SupplierManagementWindow.baml
+                |   SupplierManagementWindow.g.cs
+                |   SupplierManagementWindow.g.i.cs
+                |   UpdateInventoryWindow.baml
+                |   UpdateInventoryWindow.g.cs
+                |   UpdateInventoryWindow.g.i.cs
+                |   VoucherBlockDetailsWindow.baml
+                |   VoucherBlockDetailsWindow.g.cs
+                |   VoucherBlockDetailsWindow.g.i.cs
+                |   VoucherManagementPage.baml
+                |   VoucherManagementPage.g.cs
+                |   VoucherManagementPage.g.i.cs
+                |   
+                +---ref
+                |       QuanLiCuaHang.dll
+                |       
+                \---refint
+                        QuanLiCuaHang.dll
+                        

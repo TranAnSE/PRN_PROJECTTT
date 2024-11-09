@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="QuanLiCuaHang.InventoryPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Quản lý kho" FontSize="24" Margin="0,0,0,20"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBox x:Name="SearchTextBox" Width="200" Margin="0,0,10,0"/>
+            <Button Content="Tìm kiếm" Click="SearchButton_Click"/>
+        </StackPanel>
+
+        <DataGrid x:Name="InventoryDataGrid" Grid.Row="2" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã sản phẩm" Binding="{Binding ProductId}"/>
+                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding ProductName}"/>
+                <DataGridTextColumn Header="Số lượng tồn" Binding="{Binding InStock}"/>
+                <DataGridTextColumn Header="Giá nhập" Binding="{Binding InputPrice}"/>
+                <DataGridTextColumn Header="Giá bán" Binding="{Binding OutputPrice}"/>
+                <DataGridTemplateColumn Header="Thao tác">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Cập nhật" Click="UpdateInventory_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

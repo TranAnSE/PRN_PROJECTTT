@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="QuanLiCuaHang.ReportPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="10">
+            <TextBlock Text="Báo cáo" FontSize="24" Margin="0,0,0,20"/>
+            <ComboBox x:Name="ReportTypeComboBox" SelectionChanged="ReportTypeComboBox_SelectionChanged">
+                <ComboBoxItem Content="Doanh thu theo ngày"/>
+                <ComboBoxItem Content="Sản phẩm bán chạy"/>
+                <ComboBoxItem Content="Nhân viên xuất sắc"/>
+            </ComboBox>
+        </StackPanel>
+
+        <DataGrid x:Name="ReportDataGrid" Grid.Row="1" AutoGenerateColumns="True" Margin="10"/>
+    </Grid>
+</UserControl>

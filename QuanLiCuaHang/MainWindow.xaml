@@ -1,0 +1,31 @@
+﻿<Window x:Class="QuanLiCuaHang.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Quản lý cửa hàng" Height="600" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer Grid.Column="0" Background="#2c3e50">
+            <StackPanel>
+                <TextBlock Text="QUẢN LÝ CỬA HÀNG" FontSize="18" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,20"/>
+                <Button Content="Trang chủ" Click="HomeButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Quản lý sản phẩm" Click="ProductManagementButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Quản lý kho" Click="InventoryButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Bán hàng" Click="SalesButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Nhập hàng" Click="ImportProductButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Quản lý khách hàng" Click="CustomerManagementButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Báo cáo" Click="ReportButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Quản lý voucher" Click="VoucherManagementButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Trả lương nhân viên" Click="SalaryPaymentButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button x:Name="AdminButton" Content="Quản lý nhân viên" Click="AdminButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Cài đặt" Click="SettingsButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+                <Button Content="Đăng xuất" Click="LogoutButton_Click" Style="{StaticResource MenuButtonStyle}"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <ContentControl x:Name="MainContent" Grid.Column="1"/>
+    </Grid>
+</Window>

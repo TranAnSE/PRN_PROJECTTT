@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="QuanLiCuaHang.CheckoutPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <Grid Margin="0,0,0,10">
+                <TextBox x:Name="SearchTextBox" TextChanged="SearchTextBox_TextChanged" Padding="5,2"/>
+                <TextBlock Text="Tìm kiếm sản phẩm..." Foreground="Gray" Margin="5,2,0,0" IsHitTestVisible="False">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Text, ElementName=SearchTextBox}" Value="">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Text, ElementName=SearchTextBox}" Value="{x:Null}">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Text.IsEmpty, ElementName=SearchTextBox}" Value="False">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Grid>
+            <DataGrid x:Name="ProductsDataGrid" AutoGenerateColumns="False" Height="300">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Mã sản phẩm" Binding="{Binding Barcode}"/>
+                    <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding Title}"/>
+                    <DataGridTextColumn Header="Giá" Binding="{Binding Price, StringFormat='{}{0:N0} VND'}"/>
+                    <DataGridTextColumn Header="Tồn kho" Binding="{Binding InStock}"/>
+                    <DataGridTemplateColumn Header="Thêm">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="+" Click="AddToCart_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Giỏ hàng" FontSize="20" Margin="0,0,0,10"/>
+            <ComboBox x:Name="CustomerComboBox" DisplayMemberPath="Name" Margin="0,0,0,10"/>
+            <Button Content="Thêm khách hàng mới" Click="AddNewCustomer_Click" Margin="0,0,0,10"/>
+            <ListBox x:Name="CartListBox" Height="200">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Product.Title}" Width="150"/>
+                            <TextBlock Text="{Binding Quantity}" Width="50"/>
+                            <TextBlock Text="{Binding Price, StringFormat='{}{0:N0} VND'}" Width="100"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="Tổng cộng: "/>
+                <TextBlock x:Name="TotalTextBlock"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="Voucher: " VerticalAlignment="Center"/>
+                <TextBox x:Name="VoucherTextBox" Width="100" Margin="0,0,10,0"/>
+                <Button Content="Áp dụng" Click="ApplyVoucher_Click"/>
+            </StackPanel>
+            <Button Content="Thanh toán" Click="Checkout_Click" Margin="0,20,0,0"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

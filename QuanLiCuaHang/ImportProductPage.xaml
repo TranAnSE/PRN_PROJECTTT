@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="QuanLiCuaHang.ImportProductPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Nhập hàng" FontSize="24" Margin="0,0,0,20"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <ComboBox x:Name="SupplierComboBox" DisplayMemberPath="Name" Width="200" Margin="0,0,10,0"/>
+            <Button Content="Quản lý nhà cung cấp" Click="ManageSuppliers_Click" Width="150"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,10">
+            <Button Content="Thêm sản phẩm" Click="AddProduct_Click" Width="150" Margin="0,0,10,0"/>
+        </StackPanel>
+
+        <DataGrid x:Name="ProductsDataGrid" Grid.Row="3" AutoGenerateColumns="False" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã sản phẩm" Binding="{Binding Barcode}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding Title}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Số lượng" Binding="{Binding Quantity}"/>
+                <DataGridTextColumn Header="Giá nhập" Binding="{Binding InputPrice}"/>
+                <DataGridTextColumn Header="Giá bán" Binding="{Binding OutputPrice}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Xóa" Click="RemoveProduct_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Grid.Row="4" Content="Lưu phiếu nhập" Click="SaveImport_Click" Width="150" HorizontalAlignment="Right" Margin="0,10,0,0"/>
+    </Grid>
+</UserControl>

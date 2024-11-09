@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="QuanLiCuaHang.ImportManagementPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Quản lý nhập hàng" FontSize="24" Margin="0,0,0,20"/>
+            <Button Content="Thêm lô hàng mới" Click="AddNewBatch_Click" Width="200" Margin="0,0,0,10"/>
+            <DataGrid x:Name="ImportDataGrid" AutoGenerateColumns="False" Height="400">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Mã lô" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Ngày nhập" Binding="{Binding InputDate}"/>
+                    <DataGridTextColumn Header="Nhà cung cấp" Binding="{Binding Supplier.Name}"/>
+                    <DataGridTemplateColumn Header="Thao tác">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Xem chi tiết" Click="ViewBatchDetails_Click"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="QuanLiCuaHang.ProductManagementControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <DataGrid x:Name="ProductsGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã sản phẩm" Binding="{Binding Barcode}"/>
+                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding Title}"/>
+                <DataGridTextColumn Header="Loại" Binding="{Binding Type}"/>
+                <DataGridTextColumn Header="Nơi sản xuất" Binding="{Binding ProductionSite}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="QuanLiCuaHang.VoucherBlockDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chi tiết đợt voucher" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Chi tiết đợt voucher" FontSize="24" Margin="0,0,0,20"/>
+            <TextBlock x:Name="BlockInfoTextBlock"/>
+        </StackPanel>
+
+        <DataGrid x:Name="VouchersDataGrid" Grid.Row="1" AutoGenerateColumns="False" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã voucher" Binding="{Binding Code}"/>
+                <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

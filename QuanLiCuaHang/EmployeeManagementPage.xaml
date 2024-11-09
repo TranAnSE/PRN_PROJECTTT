@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="QuanLiCuaHang.EmployeeManagementPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Quản lý nhân viên" FontSize="24" Margin="0,0,0,20"/>
+            <Button Content="Thêm nhân viên mới" Click="AddNewEmployee_Click" Width="200" Margin="0,0,0,10"/>
+            <DataGrid x:Name="EmployeesDataGrid" AutoGenerateColumns="False" Height="400">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Mã nhân viên" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Tên" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Vai trò" Binding="{Binding UserRole}"/>
+                    <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
+                    <DataGridTemplateColumn Header="Thao tác">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="Sửa" Click="EditEmployee_Click" Margin="0,0,5,0"/>
+                                    <Button Content="Xóa" Click="DeleteEmployee_Click"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>

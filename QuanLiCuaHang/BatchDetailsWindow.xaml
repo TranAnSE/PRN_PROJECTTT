@@ -1,0 +1,28 @@
+﻿<Window x:Class="QuanLiCuaHang.BatchDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chi tiết lô hàng" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Chi tiết lô hàng" FontSize="24" Margin="0,0,0,20"/>
+            <TextBlock x:Name="BatchInfoTextBlock"/>
+        </StackPanel>
+
+        <DataGrid x:Name="ProductsDataGrid" Grid.Row="1" AutoGenerateColumns="False" Margin="0,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã sản phẩm" Binding="{Binding ProductId}"/>
+                <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding Product.Title}"/>
+                <DataGridTextColumn Header="Số lượng" Binding="{Binding Stock}"/>
+                <DataGridTextColumn Header="Ngày sản xuất" Binding="{Binding ManufacturingDate, StringFormat=dd/MM/yyyy}"/>
+                <DataGridTextColumn Header="Hạn sử dụng" Binding="{Binding ExpiryDate, StringFormat=dd/MM/yyyy}"/>
+                <DataGridTextColumn Header="Giá nhập" Binding="{Binding InputPrice}"/>
+                <DataGridTextColumn Header="Giá bán" Binding="{Binding OutputPrice}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
